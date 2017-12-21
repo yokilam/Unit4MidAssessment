@@ -40,7 +40,6 @@ public class BookViewHolder extends RecyclerView.ViewHolder {
                 bundle.putString("title", bookTitle.getText().toString());
                 bundle.putString("author", author);
                 bundle.putInt("year", year);
-                Log.e("asfjdklsajlaksfjdaskl", "onClick: " + bundle.toString());
                 TopFragment TopFragment= new TopFragment();
                 TopFragment.setArguments(bundle);
                 FragmentManager fragmentManager = ((FragmentActivity) context).getSupportFragmentManager();
