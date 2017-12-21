@@ -27,7 +27,7 @@ public class DisplayFragment extends Fragment {
 
         FragmentManager fragmentManager2 = ((FragmentActivity) context).getSupportFragmentManager();
         FragmentTransaction fragmentTransaction2 = fragmentManager2.beginTransaction();
-        fragmentTransaction2.addToBackStack("TopFragment").replace(R.id.top_fragment, new TopFragment());
+        fragmentTransaction2.addToBackStack("BottomFragment").replace(R.id.bottom_fragment, new BottomFragment());
         fragmentTransaction2.commit();
 
         return view;
